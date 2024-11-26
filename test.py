@@ -1,5 +1,3 @@
 print('Hello world')
 print('GIt')
-print('1')
-
-
+print('2')
