@@ -6,7 +6,7 @@ def  calculate_structure_sum(data_structure):
         summ += len(data_structure)
     elif isinstance(data_structure, dict):
         for key, value in data_structure.items():
-            summ = summ + len(key) + calculate_structure_sum(value)
+            summ = summ + calculate_structure_sum(key) + calculate_structure_sum(value)
     elif isinstance(data_structure, list | tuple | set):
         for j in data_structure:
             summ += calculate_structure_sum(j)
